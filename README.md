@@ -2,6 +2,7 @@
 - dwm
 - dunst
 - neovim
+- tmux
 
 ## Set up with https
 
