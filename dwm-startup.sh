@@ -5,9 +5,12 @@
 xrandr --output DisplayPort-1 --mode 2560x1440 --scale 0.75x0.75 --pos 0x0 --rotate normal --rate 143.86
 xrandr --output DisplayPort-2 --mode 2560x1440 --scale 0.75x0.75 --pos 1920x0 --rotate normal --rate 143.86
 
-# Kensington Slimblade Config
+# Kensington Slimblade Wireless Config
 xinput --set-prop 16 'libinput Accel Speed' 0.2
 xinput --set-prop 16 "libinput Middle Emulation Enabled" 1
+# Kensington Slimblade Wired Config
+xinput --set-prop 18 'libinput Accel Speed' 0.2
+xinput --set-prop 18 "libinput Middle Emulation Enabled" 1
 
 # Background image
 feh --bg-fill /home/zach/Pictures/wallpaper-xianxia-dragon.jpg
