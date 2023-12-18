@@ -2,8 +2,8 @@
 
 # Display Configurations
 # Due to .75x.75 scaling, the position of display 2 is moved over 1920 instead of 2560
-xrandr --output DisplayPort-1 --mode 2560x1440 --scale 0.75x0.75 --pos 0x0 --rotate normal --rate 143.86
-xrandr --output DisplayPort-2 --mode 2560x1440 --scale 0.75x0.75 --pos 1920x0 --rotate normal --rate 143.86
+xrandr --output DisplayPort-1 --mode 2560x1440 --scale 1x1 --pos 0x0 --rotate normal --rate 143.86
+xrandr --output DisplayPort-2 --mode 2560x1440 --scale 1x1 --pos 2560x0 --rotate normal --rate 143.86
 
 # Kensington Slimblade Wireless Config
 xinput --set-prop 16 'libinput Accel Speed' 0.2
