@@ -32,6 +32,7 @@ endif
 " List your plugins here
 call plug#begin('~/.vim/plugged')
   Plug 'mattn/emmet-vim'
+  Plug 'lambdalisue/suda.vim'
 call plug#end()
 
 " Run PlugInstall if there are missing plugins
