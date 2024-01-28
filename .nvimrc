@@ -37,7 +37,10 @@ endif
 call plug#begin('~/.vim/plugged')
   Plug 'mattn/emmet-vim'
   Plug 'lambdalisue/suda.vim'
+  Plug 'Mofiqul/dracula.nvim'
 call plug#end()
+
+colorscheme dracula
 
 " Run PlugInstall if there are missing plugins
 autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
