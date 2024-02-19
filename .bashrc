@@ -132,3 +132,17 @@ alias config='/usr/bin/git --git-dir=/home/zach/.cfg/ --work-tree=/home/zach'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Created by `pipx` on 2024-01-28 22:21:48
+export PATH="$PATH:/home/zach/.local/bin"
+export VST_PATH="/usr/bin:$HOME:/.vst:/usr/local/lib/vst:/usr/lib/vst"
+
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+
+# zoxide
+eval "$(zoxide init bash)"

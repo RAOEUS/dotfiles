@@ -38,9 +38,12 @@ call plug#begin('~/.vim/plugged')
   Plug 'mattn/emmet-vim'
   Plug 'lambdalisue/suda.vim'
   Plug 'Mofiqul/dracula.nvim'
+  Plug 'folke/tokyonight.nvim'
+  Plug 'itchyny/lightline.vim'
 call plug#end()
 
-colorscheme dracula
+colorscheme tokyonight
+let g:lightline = {'colorscheme': 'tokyonight'}
 
 " Run PlugInstall if there are missing plugins
 autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
