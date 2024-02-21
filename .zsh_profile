@@ -1,13 +1,6 @@
 export XDG_CONFIG_HOME=$HOME/.config
 VIM="nvim"
 
-# Git alias to manage dotfiles bare repo
-alias config='/usr/bin/git --git-dir=/home/zach/.cfg/ --work-tree=/home/zach'
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Created by `pipx` on 2024-01-28 22:21:48
 export PATH="$PATH:/home/zach/.local/bin"
 export VST_PATH="/usr/bin:$HOME:/.vst:/usr/local/lib/vst:/usr/lib/vst"
@@ -21,3 +14,13 @@ export QT_IM_MODULE=ibus
 
 # zoxide
 eval "$(zoxide init bash)"
+
+export VST_PATH="$VST_PATH:$HOME/.vst/u-he:$HOME/.vst/yabridge"
+
+# Created by `pipx` on 2024-01-28 22:21:48
+export PATH="$PATH:/home/zach/.local/bin"
+
+# Locale vars
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+
