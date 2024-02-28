@@ -35,11 +35,11 @@ endif
 
 " List your plugins here
 call plug#begin('~/.vim/plugged')
-  Plug 'mattn/emmet-vim'
-  Plug 'lambdalisue/suda.vim'
-  Plug 'Mofiqul/dracula.nvim'
-  Plug 'folke/tokyonight.nvim'
-  Plug 'itchyny/lightline.vim'
+Plug 'mattn/emmet-vim'
+Plug 'lambdalisue/suda.vim'
+Plug 'Mofiqul/dracula.nvim'
+Plug 'folke/tokyonight.nvim'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 colorscheme tokyonight
@@ -47,8 +47,8 @@ let g:lightline = {'colorscheme': 'tokyonight'}
 
 " Run PlugInstall if there are missing plugins
 autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \| PlugInstall --sync | source $MYVIMRC
-\| endif
+      \| PlugInstall --sync | source $MYVIMRC
+      \| endif
 
 
 " ===========
@@ -58,6 +58,12 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " enter the current millenium
 " tells vim to not bother pretending to be vi
 set nocompatible
+
+" Remap ^u and ^d commands with -zz after to center the current position on
+" the screen
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
 
 " enable syntax and plugins (for netrw)
 syntax enable
@@ -159,4 +165,3 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 nnoremap ,html 	:-1read	$HOME/.config/nvim/snippets/htmltemplate.html<CR>6jf>a
 " React functional component named after the current filename
 nnoremap ,rfc :execute '-1read $HOME/.config/nvim/snippets/react-functional-component.js' \| %s/MyComponent/\=expand('%:t:r')/g<CR>
-
