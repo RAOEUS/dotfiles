@@ -20,7 +20,4 @@ export VST_PATH="$VST_PATH:$HOME/.vst/u-he:$HOME/.vst/yabridge"
 # Created by `pipx` on 2024-01-28 22:21:48
 export PATH="$PATH:/home/zach/.local/bin"
 
-# Locale vars
-export LC_ALL="en_US.UTF-8"
-export LANG="en_US.UTF-8"
 
