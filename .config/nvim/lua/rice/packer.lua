@@ -85,6 +85,7 @@ return require('packer').startup(function(use)
                 vim.g.vimwiki_ext2syntax = { ['.md'] = 'markdown' }
                 -- Add .md file extension to generated links
                 vim.g.vimwiki_markdown_link_ext = 1
+                vim.g.vimwiki_links_space_char = '-'
             end,
         })
     end)
