@@ -1,7 +1,8 @@
 vim.opt.compatible = false
 
-vim.opt.nu = true
--- vim.opt.relativenumber = true
+-- absolute and relative line numbers
+vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.statuscolumn = "%s %l %r"
 
 vim.opt.tabstop = 4
