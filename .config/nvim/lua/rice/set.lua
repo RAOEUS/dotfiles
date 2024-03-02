@@ -3,7 +3,7 @@ vim.opt.compatible = false
 -- absolute and relative line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.statuscolumn = "%s %l %r"
+vim.opt.statuscolumn = "%l %r%s%C"
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
